@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   return (
@@ -172,50 +173,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-3xl p-8 md:p-14 max-w-[860px] mx-auto shadow-xl shadow-black/[0.03] border border-black/[0.04]">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-[13px] font-semibold font-noto mb-2.5 text-[#18212d]">이름</label>
-                  <input
-                    type="text"
-                    placeholder="이름을 입력하세요"
-                    className="w-full px-4 py-3.5 rounded-xl border border-black/[0.06] bg-[#fafafa] text-[14px] placeholder:text-[#d9d9d9] focus:ring-2 focus:ring-mir-orange/20 focus:border-mir-orange/40 transition-all"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[13px] font-semibold font-noto mb-2.5 text-[#18212d]">이메일</label>
-                  <input
-                    type="email"
-                    placeholder="이메일을 입력하세요"
-                    className="w-full px-4 py-3.5 rounded-xl border border-black/[0.06] bg-[#fafafa] text-[14px] placeholder:text-[#d9d9d9] focus:ring-2 focus:ring-mir-orange/20 focus:border-mir-orange/40 transition-all"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="block text-[13px] font-semibold font-noto mb-2.5 text-[#18212d]">연락처</label>
-                <input
-                  type="tel"
-                  placeholder="전화번호를 입력하세요"
-                  className="w-full px-4 py-3.5 rounded-xl border border-black/[0.06] bg-[#fafafa] text-[14px] placeholder:text-[#d9d9d9] focus:ring-2 focus:ring-mir-orange/20 focus:border-mir-orange/40 transition-all"
-                />
-              </div>
-              <div>
-                <label className="block text-[13px] font-semibold font-noto mb-2.5 text-[#18212d]">문의사항</label>
-                <textarea
-                  placeholder="문의사항을 입력하세요"
-                  rows={5}
-                  className="w-full px-4 py-3.5 rounded-xl border border-black/[0.06] bg-[#fafafa] text-[14px] placeholder:text-[#d9d9d9] resize-y focus:ring-2 focus:ring-mir-orange/20 focus:border-mir-orange/40 transition-all"
-                />
-              </div>
-              <div className="flex justify-end pt-2">
-                <button
-                  type="submit"
-                  className="bg-[#18212d] text-white px-10 py-3.5 rounded-full text-[14px] font-semibold hover:bg-[#2a3544] transition-all hover:shadow-lg hover:shadow-black/10 active:scale-[0.98]"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

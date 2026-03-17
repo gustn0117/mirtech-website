@@ -8,6 +8,8 @@ export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  if (pathname.startsWith('/admin')) return null;
+
   const navItems = [
     { href: '/about', label: '회사소개' },
     { href: '/services', label: '사업분야' },
