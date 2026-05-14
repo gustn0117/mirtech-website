@@ -76,6 +76,8 @@ export default function AboutPage() {
             {[
               { src: 'https://framerusercontent.com/images/MjaeopjMzWHeJGTwys40JYZIccg.png?scale-down-to=1024', alt: '중소기업 확인서' },
               { src: 'https://framerusercontent.com/images/PoKsXjcR5cESHPsjxutFxJrNRW0.png?scale-down-to=1024', alt: '창업기업 확인서' },
+              { src: '/factory-registration.jpeg', alt: '공장등록증명서' },
+              { src: '/port-transport-registration.jpeg', alt: '항만운송관련사업등록증' },
             ].map((cert) => (
               <div key={cert.alt} className="rounded-2xl overflow-hidden bg-white shadow-lg shadow-black/[0.04] border border-black/[0.04] hover:shadow-xl hover:shadow-black/[0.06] transition-shadow duration-300">
                 <img
